@@ -1,0 +1,45 @@
+#we are going to implement a series of array operations
+#1. transpose of an array
+#2. addition operation: add a int to an two dimension array
+#Since the array cannot be passed as an object, we wrote the whole program in one proc
+#the array is a fixed 3*2 matrix.
+
+proc main()
+    int a[0..2,0..1];
+	int ad;
+	int i;
+	int j;
+	
+	i=0;
+	j=0;
+	write "please enter the array: (a 3*2 array, namely 6 int's input)\n";
+	while i<2 do
+	   while j<1 do
+	      read a[i,j]	  
+		od
+	od
+	# end of building the array from input
+	
+	write "please enter the int you want to add to the array:\n"
+	read ad;
+	
+	write "the transpose format of the matrix is:\n"
+	i=0;
+	j=0;
+	while i<1 do
+	    while j<2 do
+	        write a[j, i];
+	    od
+		write "\n"
+	od
+	
+	write "the result of addition is:\n"
+	i=0;
+	j=0;
+	while i<2 do
+	    while j<1 do
+		   write (a[i,j]+ad)
+		od
+    od
+		   
+end

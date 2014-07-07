@@ -1,0 +1,5 @@
+*.o
+*.output
+liz.c
+piz.c
+piz.h
